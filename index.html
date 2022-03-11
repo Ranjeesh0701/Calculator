@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h2>Calculator</h2>
+  <form name="calculator" action="">
+  <main>
+    <div class="container">
+      <input type="button" name="display" id="display">
+      <input value="1" type=button class="grid-item" OnClick="calculator.display.value+='1'">
+      <input value="2" type=button class="grid-item" OnClick="calculator.display.value+='2'"> 
+      <input value="3" type=button class="grid-item" OnClick="calculator.display.value+='3'">
+      <input value="+" type=button class="grid-symbol" OnClick="calculator.display.value+='+'">
+      <input value="4" type=button class="grid-item" OnClick="calculator.display.value+='4'">
+      <input value="5" type=button class="grid-item" OnClick="calculator.display.value+='5'">
+      <input value="6" type=button class="grid-item" OnClick="calculator.display.value+='6'">
+      <input value="-" type=button class="grid-symbol" OnClick="calculator.display.value+='-'">
+      <input value="7" type=button class="grid-item" OnClick="calculator.display.value+='7'">
+      <input value="8" type=button class="grid-item" OnClick="calculator.display.value+='8'">
+      <input value="9" type=button class="grid-item" OnClick="calculator.display.value+='9'">
+      <input value="*" type=button class="grid-symbol" OnClick="calculator.display.value+='*'">
+      <input value="C" type=button class="grid-symbol" OnClick="calculator.display.value+=' '">
+      <input value="0" type=button class="grid-item" OnClick="calculator.display.value+='0'">
+      <input value="/" type=button class="grid-symbol" OnClick="calculator.display.value+='/'">
+      <input value="=" type=button class="grid-symbol" OnClick="calculator.display.value=eval(calculator.display.value)">
+    </div>
+    </form>
+  </main>
+</body>
+</html>
